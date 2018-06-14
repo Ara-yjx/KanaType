@@ -9,18 +9,18 @@ import { TypeService } from '../type.service'
 })
 export class MainComponent implements OnInit {
 
-  @Input() fullText: string;
+  @Input() textIndex: number;
+  s: TypeService;
 
-  typed = '';
-  constructor() { }
+  constructor(service: TypeService) {
+    this.s = service;
+  }
 
   ngOnInit() {
-    this.fullText = '日本のたこは、八世紀ごろ中国から伝わったといわれている。十七世紀になると、子供の正月遊びとして流行するようになった';
-    this.typed = '日本のたこは、八世紀ごろ中国から';
-    return;
+    this.textIndex = 0; // DEV
+    this.s.init(this.textIndex);
   }
 
   type() {
-    console.log('type');
   }
 }

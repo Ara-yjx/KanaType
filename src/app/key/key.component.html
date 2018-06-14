@@ -1,3 +1,12 @@
-<input type="button" value={{this.key[0]}}/>
+<input 
+  type="button" 
+  value={{this.keyValue[0]}} 
+  (click)="this.onClick()"
+  (mouseenter)="this.onMouseEnter()"
+  (mousedown)="this.onMouseDown()"
+  (mouseup)="this.onMouseUp()"
+  (touchstart)="this.onTouchStart()"
+
+/>
   
 <!-- </input> -->

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, OnChanges, SimpleChange } from '@angular/core';
+import { TypeService } from '../type.service'
 
 @Component({
   selector: 'app-textdisplay',
@@ -8,8 +9,11 @@ import { Component, OnInit, Input, OnChanges, SimpleChange } from '@angular/core
 export class TextdisplayComponent implements OnInit {
   // @Input() fullText: string;
   // @Input() typed: string;
+  s: TypeService;
 
-  constructor() { }
+  constructor(service: TypeService) {
+    this.s = service;
+  }
 
   ngOnInit() {
   }

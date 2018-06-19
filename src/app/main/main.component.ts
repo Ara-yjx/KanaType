@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TypeService } from '../type.service'
+import { MainStyle } from './main.component.style'
 
 @Component({
   selector: 'app-main',
@@ -10,15 +11,17 @@ import { TypeService } from '../type.service'
 export class MainComponent implements OnInit {
 
   @Input() textIndex: number;
-  s: TypeService;
-
-  constructor(service: TypeService) {
-    this.s = service;
+  ls: TypeService;
+  style: MainStyle;
+  
+  constructor(type: TypeService, style: MainStyle) {
+    this.ls = type;
+    this.style = style;
   }
 
   ngOnInit() {
     this.textIndex = 0; // DEV
-    this.s.init(this.textIndex);
+    this.ls.init(this.textIndex);
   }
 
   type() {

@@ -10,7 +10,6 @@ import { MainComponent } from './main/main.component';
 import { TextdisplayComponent } from './textdisplay/textdisplay.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { KeyComponent } from './key/key.component';
-import { StyleDirective } from './style.directive';
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -21,7 +20,6 @@ import { StyleDirective } from './style.directive';
     TextdisplayComponent,
     KeyboardComponent,
     KeyComponent,
-    StyleDirective
   ],
   imports: [
     BrowserModule,

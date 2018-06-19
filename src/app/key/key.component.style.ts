@@ -6,16 +6,22 @@ import { LayoutService } from '../layout.service'
 })
 
 export class KeyStyle{
+
+  ls: LayoutService;
+
+  constructor(layout: LayoutService) {
+    this.ls = layout;
+  }
+
   keyClass() {
     return {
-      "display": "flex",
-      "width": "100px",
-      "height": "100px",
-      "background-color": "#CCCCCC",
-      "border-color": "grey",
-      "align-items": "center",
-      "justify-content": "space-around",
-      "margin": "5px",      
+      // "display": "flex",
+      "width": this.ls.keyWidthV.toString() + "px",
+      "height": this.ls.keyWidthV.toString() + "px",
+      "background-color": "#EEEEEE",
+      "border-color": "black",
+      "border-width": "3px",
+      "margin": "0",      
     }
   };
 

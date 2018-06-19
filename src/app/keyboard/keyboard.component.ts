@@ -18,6 +18,9 @@ export class KeyboardComponent implements OnInit {
     ['ま'],
     ['や'],
     ['ら'],
+    [''],
+    ['わ'],
+    [''],    
   ];
   keyClass: Object;
 

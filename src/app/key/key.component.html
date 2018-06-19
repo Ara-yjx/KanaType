@@ -1,12 +1,15 @@
-<input 
-  type="button" 
-  value={{this.keyValue[0]}} 
+<div
+  class="key"
+  [ngStyle]="ks.keyClass()"
   (click)="this.onClick()"
   (mouseenter)="this.onMouseEnter()"
   (mousedown)="this.onMouseDown()"
   (mouseup)="this.onMouseUp()"
-  (touchstart)="this.onTouchStart()"
-
-/>
-  
-<!-- </input> -->
+  (touchstart)="this.onTouchStart($event)"
+  (touchmove)="this.onTouchMove($event)"
+  (touchend)="this.onTouchEnd($event)"
+>
+  <p [ngStyle]="ks.keyPClass()">
+    {{this.keyValue[0]}} 
+  </p>
+</div>

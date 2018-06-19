@@ -7,12 +7,21 @@
 
 .fullText {
   color: grey;
-  /* position: absolute;
-  top: 0px;
+  position: absolute;
+  width: 100%;  
+  /* top: 0px;
   left: 0px; */
 }
 
+.typed {
+  position: absolute;
+  width: 100%;
+}
 .textContainer {
   /* position: absolute;
   width: 90%; */
+}
+
+p {
+  font-size: 32px;
 }

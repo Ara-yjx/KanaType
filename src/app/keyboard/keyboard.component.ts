@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../layout.service'
 
 @Component({
   selector: 'app-keyboard',
@@ -18,7 +19,13 @@ export class KeyboardComponent implements OnInit {
     ['や'],
     ['ら'],
   ];
-  constructor() { }
+  keyClass: Object;
+
+  constructor() { 
+    this.keyClass = {
+      'width': '70px',
+    }
+  }
 
   ngOnInit() {
   }

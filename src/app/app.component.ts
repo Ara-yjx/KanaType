@@ -16,12 +16,12 @@ export class AppComponent {
       `
       body {
           margin: 0;
-          overflow: hidden !important;
-          position: fixed;
           top: 0;
           bottom: 0;
       }
       `;
+      // overflow: hidden !important;
+      
 
     document.body.appendChild(overflowHidden);
 
@@ -31,6 +31,6 @@ export class AppComponent {
     meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
     document.body.appendChild(meta) 
     
-    document.body.setAttribute("scroll", "no");
+    // document.body.setAttribute("scroll", "no");
   }
 }

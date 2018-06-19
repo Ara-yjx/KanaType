@@ -8,6 +8,8 @@ import { LayoutService } from '../layout.service'
 })
 export class KeyboardComponent implements OnInit {
 
+  ls: LayoutService;
+  
   keys = [
     ['あ'],
     ['か'],
@@ -22,14 +24,24 @@ export class KeyboardComponent implements OnInit {
     ['わ'],
     [''],    
   ];
-  keyClass: Object;
 
-  constructor() { 
-    this.keyClass = {
-      'width': '70px',
-    }
+  constructor(layout: LayoutService) {
+    this.ls = layout;  
   }
 
+  keyCalc() {
+    return {
+      'width': this.ls.keyWidthV + 'px',
+      'height': this.ls.keyHeightV + 'px',
+      'margin': this.ls.gap + 'px',
+    }
+  }
+  keyAreaCalc() {
+    return {
+      'padding': this.ls.gap + 'px',
+    }
+  }
+  
   ngOnInit() {
   }
 

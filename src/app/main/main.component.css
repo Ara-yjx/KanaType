@@ -5,10 +5,12 @@ app-textdisplay {
   height: 60%;
 } 
 app-keyboard {
-  /* display: flex; */
-  position: fixed;
+  display: flex;
+  position: fixed !important; 
   /* top: 60%; */
   bottom: 0%;
   width: 100%;
-  height: 330px;
+  background-color: coral;
+  justify-content: center;
+  flex-direction: row;
 }

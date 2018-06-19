@@ -13,7 +13,7 @@ export class MainComponent implements OnInit {
   @Input() textIndex: number;
   ls: TypeService;
   style: MainStyle;
-  
+
   constructor(type: TypeService, style: MainStyle) {
     this.ls = type;
     this.style = style;
@@ -23,7 +23,7 @@ export class MainComponent implements OnInit {
     this.textIndex = 0; // DEV
     this.ls.init(this.textIndex);
   }
-
+  
   type() {
   }
 }

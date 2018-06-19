@@ -15,19 +15,20 @@ export class KeyStyle{
 
   keyClass() {
     return {
-      // "display": "flex",
-      "width": this.ls.keyWidthV.toString() + "px",
-      "height": this.ls.keyWidthV.toString() + "px",
-      "background-color": "#EEEEEE",
-      "border-color": "black",
-      "border-width": "3px",
-      "margin": "0",      
+      // 'display': 'flex',
+      'width': this.ls.keyWidthV.toString() + 'px',
+      'height': this.ls.keyHeightV.toString() + 'px',
+      'background-color': '#EEEEEE',
+      'border-color': 'black',
+      'border-width': '3px',
+      'margin': '0',      
     }
   };
 
   keyPClass() {
     return {
-      "font-size": "40px",
+      'font-size': '30px',
+      'margin': '0',
     }
   };
 }

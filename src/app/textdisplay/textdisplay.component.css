@@ -1,25 +1,36 @@
-.typed {
+.scrollable {
+  overflow-y: scroll;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  /* background-color: yellowgreen; */
+}
+
+.fullTextContainer {
+  z-index: 0;
+}
+
+.typeContainer {
+  z-index: 1;
+}
+
+.typedP {
   color: navy;
+  position: absolute;
+  width: 100%;
   /* position: absolute;
   top: 0px;
   left: 0px; */
 }
 
-.fullText {
+.fullTextP {
   color: grey;
   position: absolute;
   width: 100%;  
   /* top: 0px;
   left: 0px; */
-}
-
-.typed {
-  position: absolute;
-  width: 100%;
-}
-.textContainer {
-  /* position: absolute;
-  width: 90%; */
+  overflow: scroll;
+  height: 300px;
 }
 
 p {

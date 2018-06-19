@@ -13,9 +13,9 @@ export class MainStyle{
     this.ls = layout;
   }
 
-  containerClass() {
+  keyboardCalc() {
     return {
-      "height": this.ls.keyHeightV * 4 + "px",
+      "height": this.ls.keyboardHeightV,
     }
   }
 }

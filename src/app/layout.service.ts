@@ -16,11 +16,17 @@ export class LayoutService {
   keyWidthV: number;
   keyHeightV: number;
   keyRatio: number; // TO SET
-
+  fontSizeFactor: number;
+  fontSize: number;
+  // keyfloatWidth_left: number;
+  
   constructor() { 
     this.keyWidth = 0.17;
     this.keyRatio = 1.3;
     this.gap = 3; //px
+    this.fontSizeFactor = 15;
+    
+    // this.keyfloatWidth_left = 
     
     this.sh = screen.height;
     this.sw = screen.width;
@@ -29,6 +35,7 @@ export class LayoutService {
     this.keyHeightV = this.keyWidthV / this.keyRatio;
     this.keyboardHeightV = this.keyHeightV * 4;
 
+    this.fontSize = this.sw / this.fontSizeFactor;
     console.log(this);
   }
 

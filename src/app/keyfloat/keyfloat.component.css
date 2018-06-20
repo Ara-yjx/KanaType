@@ -1,0 +1,11 @@
+.anchor {
+  position: absolute;
+}
+
+.float {
+  display: flex;
+  position: absolute;
+  background-color: rosybrown;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+<div class="anchor" [ngStyle]="anchorCalc()">
+  <div class="float center" [ngStyle]="centerCalc()">
+    <p [ngStyle]="keyPCalc()">
+      {{this.keyValue[0]}}     
+    </p>
+  </div>
+
+  <div class="float left" [ngStyle]="leftCalc()">
+    <p [ngStyle]="keyPCalc()">
+      {{this.keyValue[1]}}     
+    </p>
+  </div>
+
+  <div class="float up" [ngStyle]="upCalc()">
+    <p [ngStyle]="keyPCalc()">
+      {{this.keyValue[2]}}     
+    </p>
+  </div>
+
+  <div class="float right" [ngStyle]="rightCalc()">
+    <p [ngStyle]="keyPCalc()">
+      {{this.keyValue[3]}}     
+    </p>
+  </div>
+
+  <div class="float down" [ngStyle]="downCalc()">
+    <p [ngStyle]="keyPCalc()">
+      {{this.keyValue[4]}}
+    </p>
+  </div>
+</div>

@@ -11,24 +11,30 @@ export class KeyboardComponent implements OnInit {
   ls: LayoutService;
   
   keys = [
-    ['あ'],
-    ['か'],
-    ['さ'],
-    ['た'],
-    ['な'],
-    ['は'],
-    ['ま'],
-    ['や'],
-    ['ら'],
-    [''],
-    ['わ'],
-    [''],    
+    ['あ', 'い', 'う', 'え', 'お'],
+    ['か', 'き', 'く', 'け', 'こ'],
+    ['さ', 'し', 'す', 'せ', 'そ'],
+    ['た', 'ち', 'つ', 'て', 'と'],
+    ['な', 'に', 'ぬ', 'ね', 'の'],
+    ['は', 'ひ', 'ふ', 'へ', 'ほ'],
+    ['ま', 'み', 'む', 'め', 'も'],
+    ['や', '', 'ゆ', '', 'よ'],
+    ['ら', 'り', 'る', 'れ', 'ろ'],
+    ['', '', '', '', ''],
+    ['わ', 'を', 'ん', 'ー', ''],
+    ['', '', '', '', ''],
   ];
 
   constructor(layout: LayoutService) {
     this.ls = layout;  
   }
 
+  keyAreaCalc() {
+    return {
+      'padding': this.ls.gap + 'px',
+    }
+  }
+  
   keyCalc() {
     return {
       'width': this.ls.keyWidthV + 'px',
@@ -36,12 +42,11 @@ export class KeyboardComponent implements OnInit {
       'margin': this.ls.gap + 'px',
     }
   }
-  keyAreaCalc() {
-    return {
-      'padding': this.ls.gap + 'px',
-    }
-  }
   
+  keyfloatCalc() {
+    return {};
+  }
+
   ngOnInit() {
   }
 

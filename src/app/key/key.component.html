@@ -1,15 +1,18 @@
+<app-keyfloat 
+  [keyValue]="this.keyValue"
+  *ngIf="showFloat"
+>
+</app-keyfloat>
 <div
   class="key"
-  [ngStyle]="ks.keyClass()"
+  [ngStyle]="this.keyCalcObj"
   (click)="this.onClick()"
-  (mouseenter)="this.onMouseEnter()"
-  (mousedown)="this.onMouseDown()"
-  (mouseup)="this.onMouseUp()"
   (touchstart)="this.onTouchStart($event)"
   (touchmove)="this.onTouchMove($event)"
   (touchend)="this.onTouchEnd($event)"
 >
-  <p [ngStyle]="ks.keyPClass()">
+  <p [ngStyle]="this.keyPCalc()">
     {{this.keyValue[0]}} 
   </p>
+
 </div>

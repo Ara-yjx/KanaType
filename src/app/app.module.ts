@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { TextdisplayComponent } from './textdisplay/textdisplay.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { KeyComponent } from './key/key.component';
+import { KeyfloatComponent } from './keyfloat/keyfloat.component';
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -20,6 +21,7 @@ import { KeyComponent } from './key/key.component';
     TextdisplayComponent,
     KeyboardComponent,
     KeyComponent,
+    KeyfloatComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,3 +6,8 @@
   /* width: 100%;
   height: 100%; */
 }
+
+app-keyfloat {
+  position: absolute;
+  z-index: 3;
+}
